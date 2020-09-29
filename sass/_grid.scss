@@ -1,0 +1,149 @@
+/*PRODUCTOS GRID*/
+.grid-productos {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    "Foto1 Descripción1"
+    "descripción2 foto2"
+    "comidaFotoPanoramica comidaFotoPanoramica";
+
+  div {
+    padding: 12%;
+    margin: 2px;
+    border-radius: 5px;
+  }
+  p {
+    font-family: "Pacifico", cursive;
+    font-size: 50%;
+    padding: 0%;
+    margin: 0%;
+  }
+}
+
+.Descripción1 p,
+.descripción2 p,
+.comidaFotoPanoramica p {
+  color: #000000;
+}
+
+.Foto1 {
+  grid-area: Foto1;
+  background-image: url("Imagenes/Ensalada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Descripción1 {
+  grid-area: Descripción1;
+  background-color: #27c5cab4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  font-size: 100px;
+}
+
+.descripción2 {
+  grid-area: descripción2;
+  background-color: #e66bd198;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  font-size: 100px;
+}
+
+.foto2 {
+  grid-area: foto2;
+  background-image: url("Imagenes/HamburquesaCompleta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.comidaFotoPanoramica {
+  grid-area: comidaFotoPanoramica;
+  background-image: url("Imagenes/CoxinhaTradicional.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 100px;
+}
+
+/*GRID NOSOTROS*/
+.grid-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "Espacio Espacio Espacio Espacio"
+    "Espacio Espacio Espacio Espacio"
+    "Empleados Empleados Dueña Dueña"
+    "Empleados Empleados Dueña Dueña"
+    "conocer conocer conocer conocer";
+  padding-bottom: 10px;
+}
+
+.grid-nosotros > div {
+  padding-bottom: 5%;
+}
+
+.grid-nosotros h2 {
+  color: #ffffff;
+  text-shadow: 0px 5px 19px #000000;
+  font-size: 2.5rem;
+  margin-block-start: auto;
+}
+
+.grid-nosotros p {
+  color: #ffffff;
+  text-shadow: 0px 5px 19px #000000;
+  font-size: 1.8rem;
+  margin-block-start: inherit;
+}
+
+.Espacio {
+  grid-area: Espacio;
+  background-image: url("Imagenes/Espacio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.Empleados {
+  grid-area: Empleados;
+  background-image: url("Imagenes/empleados.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.Dueña {
+  grid-area: Dueña;
+  background-image: url("Imagenes/dueña.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.conocer {
+  grid-area: conocer;
+  background-image: url("Imagenes/portada_coxinha.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+}
+
+.Empleados,
+.Dueña {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: flex-end;
+}

@@ -1,0 +1,45 @@
+@import "reset";
+@import "header";
+@import "general";
+@import "productos";
+@import "formulario";
+@import "grid";
+@import "footer";
+@import "faq";
+@import "privacidad";
+@import "mixins";
+
+/*NOSOTROS*/
+#Nosotros {
+  @include section;
+  ul {
+    li {
+      display: inline;
+      img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: auto;
+        border-radius: 100px;
+      }
+    }
+  }
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 75%;
+  padding-right: 15px;
+  /* height: 60%; */
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#NosotrosPresentación p {
+  font-size: 1.5rem;
+}

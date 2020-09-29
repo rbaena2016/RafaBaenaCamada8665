@@ -1,0 +1,11 @@
+//Mixins
+
+@mixin section {
+  max-width: 100%;
+  padding: 60px 3%; //60 px arriba y abajo y 3% en laterales
+}
+
+@mixin lectura {
+  max-width: 100%;
+  padding: 10% 20%;
+}

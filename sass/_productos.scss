@@ -1,0 +1,37 @@
+/*PRODUCTOS*/
+
+#Productos {
+  h2 {
+    color: white;
+  }
+  background-color: black;
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+    padding-bottom: 10%;
+
+    li {
+      display: inline;
+
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        display: inline-block;
+        margin: 20px;
+      }
+    }
+  }
+}
+
+-productosPag {
+  p {
+    color: #000000;
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+  }
+}

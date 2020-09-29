@@ -1,0 +1,462 @@
+@charset "UTF-8";
+/*RESET GENERALES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*HEADER*/
+h1 {
+  font-family: "Baloo Tamma 2", cursive;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background: -webkit-gradient(linear, 50% 2%, 10% 21%, from(#a5da24), to(#dcd61f));
+}
+h1 a {
+  max-width: 100%;
+  padding: 60px 3%;
+  color: #f7f7f7ef;
+  text-shadow: 5px 5px 5px #000000;
+  text-decoration: none;
+}
+
+header li {
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Baloo Tamma 2", cursive;
+  font-weight: 600;
+  display: inline;
+}
+
+.header ul li a {
+  color: white;
+  font-size: 1rem;
+  transition: 0.75s;
+}
+
+.header ul li a:hover {
+  color: #000000;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/*GENERAL*/
+h2 {
+  font-family: "Baloo Tamma 2", cursive;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  text-shadow: 1px 1px 1px #ffffff;
+}
+
+h3 {
+  font-family: "Baloo Tamma 2", cursive;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 900;
+  padding-bottom: 2%;
+}
+
+p {
+  font-family: "Baloo Tamma 2", cursive;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+div nav ul {
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  word-spacing: 30px;
+  margin-top: -50px;
+}
+
+/*PRODUCTOS*/
+#Productos {
+  background-color: black;
+}
+#Productos h2 {
+  color: white;
+}
+#Productos ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  padding-bottom: 10%;
+}
+#Productos ul li {
+  display: inline;
+}
+#Productos ul li img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 20px;
+}
+
+-productosPag p {
+  color: #000000;
+  padding-bottom: 50px;
+  font-size: 1.5rem;
+}
+
+/*FORMULARIO CONTACTO*/
+form {
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  display: block;
+  max-width: 100%;
+}
+
+#formulario {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+#formulario input {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: "Baloo Tamma 2", cursive;
+}
+#formulario textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: "Baloo Tamma 2", cursive;
+  resize: vertical;
+  max-height: 300px;
+  min-height: 100px;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #4be388;
+}
+
+input [type=submit] {
+  margin-bottom: 0px;
+  background: #ff4e28;
+  color: #ffffff;
+  border: none;
+}
+
+/*PRODUCTOS GRID*/
+.grid-productos {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Foto1 Descripción1" "descripción2 foto2" "comidaFotoPanoramica comidaFotoPanoramica";
+}
+.grid-productos div {
+  padding: 12%;
+  margin: 2px;
+  border-radius: 5px;
+}
+.grid-productos p {
+  font-family: "Pacifico", cursive;
+  font-size: 50%;
+  padding: 0%;
+  margin: 0%;
+}
+
+.Descripción1 p,
+.descripción2 p,
+.comidaFotoPanoramica p {
+  color: #000000;
+}
+
+.Foto1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Foto1;
+  background-image: url("Imagenes/Ensalada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Descripción1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: Descripción1;
+  background-color: #27c5cab4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  font-size: 100px;
+}
+
+.descripción2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: descripción2;
+  background-color: #e66bd198;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  font-size: 100px;
+}
+
+.foto2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: foto2;
+  background-image: url("Imagenes/HamburquesaCompleta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.comidaFotoPanoramica {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: comidaFotoPanoramica;
+  background-image: url("Imagenes/CoxinhaTradicional.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 100px;
+}
+
+/*GRID NOSOTROS*/
+.grid-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+  gap: 10px 10px;
+  grid-template-areas: "Espacio Espacio Espacio Espacio" "Espacio Espacio Espacio Espacio" "Empleados Empleados Dueña Dueña" "Empleados Empleados Dueña Dueña" "conocer conocer conocer conocer";
+  padding-bottom: 10px;
+}
+
+.grid-nosotros > div {
+  padding-bottom: 5%;
+}
+
+.grid-nosotros h2 {
+  color: #ffffff;
+  text-shadow: 0px 5px 19px #000000;
+  font-size: 2.5rem;
+  margin-block-start: auto;
+}
+
+.grid-nosotros p {
+  color: #ffffff;
+  text-shadow: 0px 5px 19px #000000;
+  font-size: 1.8rem;
+  margin-block-start: inherit;
+}
+
+.Espacio {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: Espacio;
+  background-image: url("Imagenes/Espacio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.Empleados {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: Empleados;
+  background-image: url("Imagenes/empleados.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.Dueña {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-area: Dueña;
+  background-image: url("Imagenes/dueña.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.conocer {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: conocer;
+  background-image: url("Imagenes/portada_coxinha.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+}
+
+.Empleados,
+.Dueña {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: flex-end;
+}
+
+/*FOOTER*/
+.footer {
+  max-width: 100%;
+  padding: 60px 3%;
+  background-color: black;
+}
+.footer ul {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+}
+.footer li {
+  display: inline;
+  font-family: "Baloo Tamma 2", cursive;
+}
+.footer a {
+  color: white;
+  font-size: 1rem;
+  transition: 0.75s;
+}
+.footer a:hover {
+  color: #7eff33;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.footer p {
+  color: white;
+}
+
+/*ACORDEON*/
+.acordeon, .card-header {
+  max-width: 100%;
+  padding: 10% 20%;
+  color: rgba(61, 61, 73, 0.795);
+}
+
+/*FAQ ESTILO MODIFICADO*/
+.card-header {
+  border-bottom: 1px solid #49505763;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(73, 80, 87, 0.39);
+  background-color: transparent;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+}
+.card-header a {
+  color: black;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0.5px solid rgba(1, 0, 0, 0);
+  border-radius: 0.25rem;
+}
+
+#Privacidad,
+#Cookies {
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+#Privacidad p,
+#Cookies p {
+  font-family: "Baloo Tamma 2", cursive;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 1.5em;
+  text-align: left;
+}
+
+/*NOSOTROS*/
+#Nosotros {
+  max-width: 100%;
+  padding: 60px 3%;
+}
+#Nosotros ul li {
+  display: inline;
+}
+#Nosotros ul li img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: auto;
+  border-radius: 100px;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 75%;
+  padding-right: 15px;
+  /* height: 60%; */
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#NosotrosPresentación p {
+  font-size: 1.5rem;
+}

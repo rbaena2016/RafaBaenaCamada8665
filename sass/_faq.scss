@@ -1,0 +1,38 @@
+/*ACORDEON*/
+@import "mixins";
+
+.acordeon {
+  @include lectura;
+  color: rgba(61, 61, 73, 0.795);
+}
+
+/*FAQ ESTILO MODIFICADO*/
+.card-header {
+  @extend.acordeon;
+  border-bottom: 1px solid #49505763;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(73, 80, 87, 0.39);
+  background-color: transparent;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0.5px solid rgba(1, 0, 0, 0);
+  border-radius: 0.25rem;
+}

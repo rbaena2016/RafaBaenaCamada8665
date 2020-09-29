@@ -1,0 +1,49 @@
+/*FORMULARIO CONTACTO*/
+
+form {
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  display: block;
+  max-width: 100%;
+}
+
+#formulario {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 100px;
+
+  input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: "Baloo Tamma 2", cursive;
+  }
+  textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: "Baloo Tamma 2", cursive;
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+  }
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #4be388;
+}
+
+input [type="submit"] {
+  margin-bottom: 0px;
+  background: #ff4e28;
+  color: #ffffff;
+  border: none;
+}
