@@ -43,3 +43,10 @@
 #NosotrosPresentación p {
   font-size: 1.5rem;
 }
+
+/*Mobile*/
+@media screen and (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+}
