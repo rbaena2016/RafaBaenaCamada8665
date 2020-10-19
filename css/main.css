@@ -24,7 +24,13 @@ h1 {
   font-weight: 900;
   padding-top: 2rem;
   padding-bottom: 4rem;
-  background: -webkit-gradient(linear, 50% 2%, 10% 21%, from(#a5da24), to(#dcd61f));
+  background: -webkit-gradient(
+    linear,
+    50% 2%,
+    10% 21%,
+    from(#a5da24),
+    to(#dcd61f)
+  );
 }
 h1 a {
   max-width: 100%;
@@ -172,7 +178,7 @@ textarea:focus {
   border: 1px solid #4be388;
 }
 
-input [type=submit] {
+input [type="submit"] {
   margin-bottom: 0px;
   background: #ff4e28;
   color: #ffffff;
@@ -376,7 +382,8 @@ input [type=submit] {
 }
 
 /*ACORDEON*/
-.acordeon, .card-header {
+.acordeon,
+.card-header {
   max-width: 100%;
   padding: 10% 20%;
   color: rgba(61, 61, 73, 0.795);
